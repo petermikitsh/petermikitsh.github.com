@@ -26,7 +26,7 @@ grep yyyymmdd calendar_dates.txt
 
 Here is that information in an easier-to-understand format:
 
-<img src="../../../images/wmata_service_id.png"/><br/>
+<img src="../../../../images/wmata_service_id.png"/><br/>
 
 2/18/2013 seemed to have some exceptions, but the last two weeks generated a "typical" rail schedule, which I used to for the analytics. For example, I assumed any record in stop_times with a service_id of 8 occured 5 times in a single week, based on the chart. To find the number of stops made by trains in a week, I wrote the following awk script:
 

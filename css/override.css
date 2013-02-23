@@ -1,0 +1,17 @@
+p {
+  margin: 10px 0 10px;
+}
+
+footer {
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #e5e5e5;
+  background-color: #f5f5f5;
+  margin-left: -20px;
+  margin-right: -20px;
+  text-align: center;
+}
+
+.navpadding {
+  margin-top: 40px;
+}

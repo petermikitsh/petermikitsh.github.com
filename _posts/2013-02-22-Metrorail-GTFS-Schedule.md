@@ -2,6 +2,7 @@
 layout: post
 title: Metrorail GTFS Schedule Analysis
 tags: WMATA
+comments: true
 ---
 
 As mentioned in Thursday's post, I was able to calculate the number of trains Metro runs on for a full week of regular service, and the number of stops made over one week. calendar_dates.txt is the GTFS file WMATA uses to specify the schedule. That is, given a calendar day <code>date</code>, for the specified <code>service_id</code>, the service is scheduled operates iff the <code>exception_type == 1</code>. For WMATA's GTFS data, all service is defined as exception type 1 (whereas 0 removes it from the schedule), so this file is necessary to know if a scheduled stop times occur on a given day. Here's sample data from calendar_dates.txt:

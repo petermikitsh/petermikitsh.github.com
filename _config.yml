@@ -1,2 +1,6 @@
 pygments: true
 permalink: pretty
+comments :
+  provider : disqus
+  disqus :
+    short_name : petermikitsh

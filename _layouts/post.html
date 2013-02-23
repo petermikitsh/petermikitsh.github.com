@@ -2,12 +2,9 @@
 layout: index
 ---
 
-<!DOCTYPE html>
-<html>
-<body>
-	<a href="{{ page.url }}"><h3>{{ page.title }}</h3></a>
-	<h5>{{ page.date | date: "%d %B %Y" }}</h5>
-	{{ content }}
-</body>
-
- </html>
+<a href="{{ page.url }}"><h3>{{ page.title }}</h3></a>
+<h5>{{ page.date | date: "%d %B %Y" }}</h5>
+{{ content }}
+{% if page.comments %}
+	{% include comment.html %}
+{% endif %}

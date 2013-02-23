@@ -35,7 +35,7 @@ Here is that information in an easier-to-understand format:
 awk -F, '
 FNR==NR
 {f1[$3]=$2}
-{if (f1[$1] == 2)      { train += 2; next;
+{if (f1[$1] == 2)      { train += 1; next;
 } else if(f1[$1] == 3) { train += 1; next;
 } else if(f1[$1] == 4) { train += 5; next;
 } else if(f1[$1] == 5) { train += 1; next;
@@ -44,7 +44,7 @@ FNR==NR
 } else if(f1[$1] == 8) { train += 5; next;
 } else { next; }}
 END{ print train }
-' trips.txt stop_times_slim.txt
+' trips_trim.txt stop_times_trim.txt
 {% endhighlight %}
 
-By mapping the trip_id to the service_id, I could look up the service_id in the stop_times file and increment a count based of the number of times that service_id occured in one week. That led to a count of <strong>237,096</strong> stops made by trains weekly.
+By mapping the trip_id to the service_id, I could look up the service_id in the stop_times file and increment a count based of the number of times that service_id occured in one week. That led to a count of <strong>214,358</strong> stops made by trains weekly.

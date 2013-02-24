@@ -7,6 +7,8 @@ comments: true
 
 General Transit Feed Specification, or GTFS, is the format WMATA publishes schedule data information; it also powers their trip planner. If you were only interested in MetroRail data, you're going to have to filter out the packaged bus transit data, which reduces file sizes considerably. Unix commands grep and awk are very helpful in getting the job done.
 
+<!-- more -->
+
 In order to determine when the next train will arrive at a given station, three files are included in the GTFS information: routes.txt, trips.txt, and stop_times.txt. In CSV format, the routes.txt details each possible route in the WMATA system:
 
 {% highlight sh lineos %}

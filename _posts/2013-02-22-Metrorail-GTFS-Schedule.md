@@ -5,7 +5,11 @@ tags: WMATA
 comments: true
 ---
 
-As mentioned in Thursday's post, I was able to calculate the number of trains Metro runs on for a full week of regular service, and the number of stops made over one week. calendar_dates.txt is the GTFS file WMATA uses to specify the schedule. That is, given a calendar day <code>date</code>, for the specified <code>service_id</code>, the service is scheduled operates iff the <code>exception_type == 1</code>. For WMATA's GTFS data, all service is defined as exception type 1 (whereas 0 removes it from the schedule), so this file is necessary to know if a scheduled stop times occur on a given day. Here's sample data from calendar_dates.txt:
+As mentioned in Thursday's post, I was able to calculate the number of trains Metro runs on for a full week of regular service, and the number of stops made over one week. calendar_dates.txt is the GTFS file WMATA uses to specify the schedule. 
+
+<!-- more -->
+
+That is, given a calendar day <code>date</code>, for the specified <code>service_id</code>, the service is scheduled operates iff the <code>exception_type == 1</code>. For WMATA's GTFS data, all service is defined as exception type 1 (whereas 0 removes it from the schedule), so this file is necessary to know if a scheduled stop times occur on a given day. Here's sample data from calendar_dates.txt:
 
 {% highlight sh %}
 calendar_dates.txt
@@ -27,9 +31,9 @@ grep yyyymmdd calendar_dates.txt
 
 Here is that information in an easier-to-understand format:
 
-<img src="../../../../images/wmata_service_id.png"/><br/>
+<img src="../../../../images/wmata_service_id.png"/>
 
-2/18/2013 seemed to have some exceptions, but the last two weeks generated a "typical" rail schedule, which I used to for the analytics. For example, I assumed any record in stop_times with a service_id of 8 occured 5 times in a single week, based on the chart. To find the number of stops made by trains in a week, I wrote the following awk script:
+<p>2/18/2013 seemed to have some exceptions, but the last two weeks generated a "typical" rail schedule, which I used to for the analytics. For example, I assumed any record in stop_times with a service_id of 8 occured 5 times in a single week, based on the chart. To find the number of stops made by trains in a week, I wrote the following awk script:</p>
 
 
 {% highlight sh %}

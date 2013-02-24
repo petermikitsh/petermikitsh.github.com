@@ -5,5 +5,5 @@ layout: index
 {% for post in site.posts %}
 	<a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
 	<h5>{{ post.date | date: "%d %B %Y" }}</h5>
-	{{ post.content }}
+	{{ post.content | split: '<!-- more -->' | first }}
 {% endfor %}

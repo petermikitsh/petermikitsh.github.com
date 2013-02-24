@@ -14,7 +14,7 @@ comments: false
 	<div class="span4">
 		<div class="projtitle">Mastermind (boardgame)</div>
 
-		<p>Applying design patterns covered in the Gang of Four text, the Mastermind game is playable from either a graphic or command line interface. Users can play against the computer, at varying degrees of algorithm difficulty.</p>
+		<p>Applying design patterns covered in the <a href="http://en.wikipedia.org/wiki/Design_Patterns">Gang of Four</a>, the Mastermind game is playable from either a graphic or command line interface. Users can play against the computer, at varying degrees of algorithm difficulty.</p>
 
 		<p><ul class="unstyled">
 			<li><a href="https://github.com/petermikitsh/mastermind">Release Candidate 2</a></li>
@@ -30,7 +30,7 @@ comments: false
 	<div class="span4">
 		<div class="projtitle">Pizza Delivery System</div>
 
-		<p>Applying design patterns covered in the <a href="http://en.wikipedia.org/wiki/Design_Patterns">Gang of Four</a>, the Mastermind game is playable from either a graphic or command line interface. Users can play against the computer, at varying degrees of algorithm difficulty.</p>
+		<p>This 10-week project coordinated 5 team members to assemble a pizza ordering system in Java. Comprehensive statistics for pricing, preparation, cooking, and delivery times of orders are accessible through a manager report. An agile software development process was applied to create a high-quality application.</p>
 
 		<p><ul class="unstyled">
 			<li><a href="https://github.com/petermikitsh/PizzaDeliverySystem">Source and Executable</a></li>

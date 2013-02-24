@@ -1,3 +1,8 @@
+h3 {
+	line-height: 24px;
+	padding: 12px 0;
+}
+
 p {
   margin: 10px 0 10px;
 }
@@ -13,6 +18,30 @@ p {
 
 .navpadding {
   margin-top: 40px;
+}
+
+.pager {
+  margin: 20px 0;
+}
+
+.pager a {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 20px;
+  position: fixed;
+  text-align: center;
+  text-decoration: none;
+  top: 50%;
+}
+
+.pager a.prev {
+  border-radius: 0px 10px 10px 0px;
+  left: 0%;
+}
+
+.pager a.next {
+  border-radius: 10px 0px 0px 10px;
+  right: 0%;
 }
 
 @media (max-width: 767px) {

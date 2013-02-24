@@ -4,7 +4,14 @@ layout: index
 
 <a href="{{ page.url }}"><h3>{{ page.title }}</h3></a>
 <h5>{{ page.date | date: "%d %B %Y" }}</h5>
+
 {{ content }}
+
 {% if page.comments %}
 	{% include comment.html %}
 {% endif %}
+
+<div class="pager hidden-phone hidden-tablet">
+  <a class="prev" href="{{ page.previous.url}} "> < </a>
+  <a class="next" href="{{ page.next.url }}"> > </a>
+</div>

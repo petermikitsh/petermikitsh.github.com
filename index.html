@@ -2,8 +2,14 @@
 layout: index
 ---
 
+<p></p>
 {% for post in site.posts %}
-	<a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-	<h5>{{ post.date | date: "%d %B %Y" }}</h5>
-	{{ post.content | split: '<!-- more -->' | first }}
+	<div class="row-fluid">
+		<div class="span2 date hidden-phone hidden-tablet visible-desktop">
+			{{ post.date | date: "%d %B<br>%Y" }}
+		</div>
+		<a href="{{ post.url }}"><h3 class="home">{{ post.title }}</h3></a>
+		<div class="visible-phone visible-tablet hidden-desktop"><strong>{{ post.date | date: "%d %B %Y" }}</strong></div>
+		{{ post.content | split: '<!-- more -->' | first }}
+	</div>
 {% endfor %}

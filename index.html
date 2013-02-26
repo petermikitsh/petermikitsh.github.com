@@ -2,14 +2,21 @@
 layout: index
 ---
 
-<p></p>
-{% for post in site.posts %}
-	<div class="row-fluid">
-		<div class="span2 date hidden-phone hidden-tablet visible-desktop">
-			{{ post.date | date: "%d %B<br>%Y" }}
-		</div>
-		<a href="{{ post.url }}"><h3 class="home">{{ post.title }}</h3></a>
-		<div class="visible-phone visible-tablet hidden-desktop"><strong>{{ post.date | date: "%d %B %Y" }}</strong></div>
-		{{ post.content | split: '<!-- more -->' | first }}
+
+
+<div class="main row-fluid">
+	<div class="span2 aboutme imagepad">
+		<img src="images/thumb_172.jpg">
+		<br>
+		<small>Marine One at The White House</small>
 	</div>
-{% endfor %}
+	<div class="span9">
+		<h3 class="home">Welcome!</h3>
+
+		<p>I'm Peter Mikitsh, a third year Software Engineering Student at the Rochester Institute of Technology, located in Rochester, NY.</p>
+
+		<p>Thank you for checking out my academic and personal software projects.</p>
+
+		<a href="http://www.se.rit.edu/~pam3961/documents/personal/resume.pdf">Resume</a>
+	</div>
+</div>

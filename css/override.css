@@ -2,7 +2,8 @@ h3 {
 	line-height: 24px;
 	padding: 12px 0;
 }.home {
-	padding-top: 0px;
+	padding: 0px;
+	margin: 0px;
 }
 
 h4 {
@@ -53,6 +54,19 @@ p {
 	opacity: 0.75;
 }
 
+.main{
+	padding-top: 20px;
+}
+
+.aboutme {
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.imagepad {
+	margin-bottom: 20px;
+}
+
 .pager a.prev {
   border-radius: 0px 10px 10px 0px;
   left: 0%;
@@ -68,6 +82,15 @@ p {
 	font-weight: bold;
 }
 
+@media (max-width: 979px) {
+	.navpadding {
+		margin-top: 0px;
+	}
+	.navbar-fixed-top {
+		margin-bottom: 0px;
+	}
+}
+
 @media (max-width: 767px) {
   .footer {
     margin-right: -20px;
@@ -77,5 +100,8 @@ p {
   }
   .projtitle {
   	padding-top: 20px;
+  }
+  .navbar-fixed-top {
+  	margin-bottom:0px;
   }
 }

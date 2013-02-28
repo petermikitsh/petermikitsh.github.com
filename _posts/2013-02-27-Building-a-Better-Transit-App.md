@@ -1,0 +1,16 @@
+---
+layout: post
+title: Building a Better WMATA Transit App
+tags: WMATA
+comments: true
+---
+
+After speaking with a Computer Science student and a non-computing friend who respresented the user's perspective, I have formally outlined requirements for a WMATA transit web app. <!-- more --> While requirements engineering may not be the most exciting part of any software project, the process brings about many questions that have great impact on the system design and the final product.
+
+My original concept was to create an app to allow a user to obtain their metro card usage information from WMATA and show the fiscal and enviornmental benefits to taking public transportation with stats tailored to their usage. I contacted WMATA's representative for developers. With no existing API to obtain usage information, the idea was tabled. But I still wanted to find a way to promote public transportation, so I shared the concept with my Facebook friends. While commuters are often critical of Metro's pricing and quality of service, my fellow DC urbanites agreed they would likely find alternative transporation arrangements less enjoyable. For example, commuters preferred Metro versus travelling by car during rush hour and paying downtown parking fees. Overall, among the Facebook discussion, the idea was well-received. But, how useful would such an app be?
+
+I wanted the perspective of a possible user. So I got lunch with Dan Wang (<a href="http://www.twitter.com/danwangphoto">@danwangphoto</a>) and shared the idea with him. While Dan hasn't lived in DC, he had an appreciation for the conversation the app idea had generated and the goals I had in mind. Dan also isn't a Computer Scientist or a Software Engineer, so I knew that we could focus on the features the application should bring, rather than discussion of technology choices or implementation details. His greatest concern was the overall usefulness of the app. While he thought the the price comparison feature would promote the use of public transportation, he viewed the feature as complimentary, and not core. I would be more successful developing an app that featured realtime train schedules and a future trip planner.
+
+With multiple web apps with the same functionality, how I could I provide a competitive user experience? Aside from creating an intuitive UI, I can write an improved trip planning algorithm and include fare information in results. Steven Brunwasser (<a href="http://twitter.com/Altece">@Altece</a>) was weary about including fares as a feature-- since it changes over time, I raise the chance of providing inaccurate fare information. Serving inaccurate information is worse than serving none at all. While that is a valid point, fare increases are announced by the Board and months in advance-- in fact, <a href="http://www.wmata.com/about_metro/docs/Fare%20History%20through%20July-2012.pdf">fare prices have only increased eight times in the past decade</a>. If I wrote my own interface to provide fare information separate from the app, then I minimize the risk of providing out-of-date information. 
+
+Thank you again Dan and Steve for your feedback and your support. I look forward to seeing the project grow.

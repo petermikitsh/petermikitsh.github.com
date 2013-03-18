@@ -15,6 +15,17 @@ p {
   margin: 10px 0 10px;
 }
 
+.icon {
+  padding: 0 5px;
+  opacity: 0.4;
+  width: 700px;
+}
+.icon:hover {
+  opacity: 0.3;
+}.icon:img.border{
+  padding: 0 5px;
+}
+
 .date {
   background-color: #222222;
   color: #ffffff;

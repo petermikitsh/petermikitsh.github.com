@@ -10,6 +10,16 @@
      <script src="http://code.jquery.com/jquery.js"></script>
      <script src="{{root}}/js/bootstrap.min.js"></script>
      <script src="{{root}}/js/google.js"></script>
+     <!--Video Player-->
+     <link href="http://vjs.zencdn.net/4.1/video-js.css" rel="stylesheet">
+     <script src="http://vjs.zencdn.net/4.1/video.js"></script>
+     <style type="text/css">
+       .vjs-control-bar { font-size: 120% }
+       .vjs-poster { background-size: cover; }
+       .vjs-default-skin .vjs-play-progress, .vjs-default-skin .vjs-volume-level  { background-color: #F36E21 }
+       .vjs-default-skin .vjs-big-play-button { -webkit-border-radius: 0px; border-radius: 0px; top:18em; border: 0px; }
+     </style>
+     <!-- End Video Player-->
   </head>
 
   <body>
@@ -23,9 +33,8 @@
             </button>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li ><a href="/">About</a></li>
+                <li ><a href="/">Projects</a></li>
                 <li ><a href="/blog">Blog</a></li>
-                <li ><a href="/projects">Projects</a></li>
             </ul>
           </div>
         </div>

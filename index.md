@@ -18,7 +18,7 @@ comments: false
 	    <img src="../images/southwest.png"/>
 	  </div>
 	  <div class="row-fluid row-projects-description">
-	    #swaflies is an internal application for finding non-revenue itineraries with Southwest Airlines. While typical booking is limited by networking planning, #swaflies finds the most desirable itineraries that offer a maximum number of available seats. By utilizing a graph data structure to model the Southwest network (cities as nodes; routes as edges), combined with a service layer that provides flight and seating information, all possible itineraries are generated between two city pairs for a given date. Users can filter itinieraries multi-dimensionally by trip duration, layover time, and departure time. This web app is built on <a href="rubyonrails.org">Ruby on Rails</a> and <a href="mixitup.io">mixitup.js</a>.
+	    #swaflies is an internal application for finding non-revenue itineraries with Southwest Airlines. While typical booking is limited by networking planning, #swaflies finds the most desirable itineraries that offer a maximum number of available seats. By utilizing a graph data structure to model the Southwest network (cities as nodes; routes as edges), combined with a service layer that provides flight and seating information, all possible itineraries are generated between two city pairs for a given date. Users can filter itinieraries multi-dimensionally by trip duration, layover time, and departure time. This web app is built on <a href="http://rubyonrails.org">Ruby on Rails</a> and <a href="http://mixitup.io">mixitup.js</a>.
 	   </div>
 	  
 

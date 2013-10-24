@@ -12,6 +12,16 @@ comments: false
 	  </div>
 
 	  <div class="row-fluid row-projects-title">
+	    <h2>nycfloods (Fall 2013)</h2>
+	  </div>
+	  <div class="row-fluid">
+	    <img src="../images/nycfloods.png"/>
+	  </div>
+	  <div class="row-fluid row-projects-description">
+	    nycfloods was created for the <a href="http://cnycn.org">Center for NYC Neighborhoods</a> at the JPMorgan Code for Good Challenge. The web app educates users about the Biggert-Waters Flood Insurance Reform Act, which raises flood insurance price for individuals living in risk areas, as identified by FEMA. Users can effortlessly tweet their legislators as nycfloods pre-fills a tweet message, including the legislator's twitter handles, based off current location. View a live demo, hosted by <a href="http://jpmc4g.herokuapp.com">Heroku</a>. Source code on <a href="https://github.com/cityfloodz/nycfloods/">Github</a>. 
+	   </div>
+
+	  <div class="row-fluid row-projects-title">
 	    <h2>#swaflies (Summer 2013)</h2>
 	  </div>
 	  <div class="row-fluid">

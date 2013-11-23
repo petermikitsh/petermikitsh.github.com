@@ -11,6 +11,18 @@ comments: false
 	    <!--<h1>Projects</h1>-->
 	  </div>
 
+
+	  <div class="row-fluid row-projects-title">
+	    <h2>RIT Student Government (Winter 2013)</h2>
+	  </div>
+	  <div class="row-fluid">
+	    <img src="../images/sg.png"/>
+	  </div>
+	  <div class="row-fluid row-projects-description">
+	    The RIT Student Government website brings Student Government's services to the web, including online forms for requesting access to a voting application, wide-format printer, funds requests, and more. A live blogging feature is included (using <a href="https://github.com/faye">Faye</a> websockets). This web app is built on <a href="http://rubyonrails.org">Ruby on Rails</a>.
+	   </div>
+
+
 	  <div class="row-fluid row-projects-title">
 	    <h2>#swaflies (Summer 2013)</h2>
 	  </div>
